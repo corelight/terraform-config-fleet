@@ -1,6 +1,6 @@
 locals {
-  fleet_certificate    = file("~/corelight-fleetd.pem")
-  fleet_sensor_license = file("~/corelight-fleet-license.txt")
+  fleet_certificate    = file("<path_to>/fleet.pem")
+  fleet_sensor_license = file("<path_to>/license.txt")
   api_password         = "changeme-api"
   fleet_password       = "changeme-fleet"
   fleet_username       = "fleetadmin"

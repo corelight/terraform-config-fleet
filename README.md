@@ -8,8 +8,8 @@ Terraform for Corelight's Fleet Manager Configuration.
 module "fleet_config" {
   source = "github.com/corelight/terraform-config-fleet"
 
-  fleet_certificate      = "<your base64-encoded Fleet certificate>"
-  fleet_sensor_license   = "<your base64-encoded Fleet sensor license>"
+  fleet_certificate      = file("path/to/cert.pem")
+  fleet_sensor_license   = file("path/to/license.txt")
   api_password           = "<API password for Fleet configuration>"
   fleet_password         = "<password for the Fleet user>"
   fleet_username         = "<username for the Fleet user>"
@@ -20,7 +20,7 @@ module "fleet_config" {
   radius_shared_secret  = "<RADIUS shared secret>"
 
   # Optional - Fleet Version
-  fleet_version         = "27.8.1"
+  fleet_version         = "28.2.2"
 }
 ```
 
