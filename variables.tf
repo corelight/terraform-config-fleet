@@ -14,8 +14,8 @@ variable "fleet_sensor_license" {
   type        = string
 }
 
-variable "api_password" {
-  description = "API password for Fleet configuration"
+variable "community_string" {
+  description = "community string for sensor pairing"
   type        = string
   sensitive   = true
 }

@@ -10,7 +10,7 @@ module "fleet_config" {
 
   fleet_certificate      = file("path/to/cert.pem")
   fleet_sensor_license   = file("path/to/license.txt")
-  api_password           = "<API password for Fleet configuration>"
+  community_string       = "<community string for sensor pairing>"
   fleet_password         = "<password for the Fleet user>"
   fleet_username         = "<username for the Fleet user>"
 

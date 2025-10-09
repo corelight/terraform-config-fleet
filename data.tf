@@ -8,7 +8,7 @@ data "cloudinit_config" "config" {
       fleet_version        = var.fleet_version
       fleet_certificate    = base64encode(var.fleet_certificate)
       fleet_sensor_license = base64encode(var.fleet_sensor_license)
-      api_password         = var.api_password
+      community_string     = var.community_string
       fleet_password       = var.fleet_password
       fleet_username       = var.fleet_username
 
